@@ -1,15 +1,13 @@
 # Loan Approval Prediction
 
-## Project Overview
-This project predicts whether a loan will be approved based on applicant information using **Machine Learning**.  
-It demonstrates **data preprocessing, exploratory data analysis, model training, and evaluation** using Logistic Regression and Random Forest.
+## Project Description
+Predict loan approval using a processed loan dataset by analyzing applicant details like income, credit history, employment, and property area.  
+The project demonstrates data preprocessing, exploratory analysis, Logistic Regression and Random Forest models, model evaluation, and feature importance for actionable insights.
 
 ---
 
 ## Dataset
-The dataset is taken from Kaggle:  
-[Loan Prediction Dataset](https://www.kaggle.com/datasets/altruistdelhite04/loan-prediction-problem-dataset)  
-
+The dataset used is a processed version of the original loan dataset, where the target variable `Loan_Status` was created for prediction purposes.  
 **Features include:**
 - Gender
 - Married
@@ -33,26 +31,23 @@ The dataset is taken from Kaggle:
    - Checked for missing values and basic statistics
 
 2. **Data Preprocessing**
-   - Filled missing values with mode/median
-   - Encoded categorical features using Label Encoding
-   - Scaled numerical features (optional but recommended)
+   - Handled missing values
+   - Encoded categorical variables using Label Encoding
+   - Scaled numerical features
 
 3. **Model Training**
-   - Trained **Logistic Regression** and **Random Forest Classifier**
-   - Split dataset into 80% training and 20% testing
+   - Logistic Regression
+   - Random Forest Classifier
 
 4. **Model Evaluation**
-   - Evaluated models using:
-     - Accuracy
-     - Confusion Matrix
-     - Classification Report
-   - Random Forest feature importance analysis
+   - Accuracy, Confusion Matrix, Classification Report
+   - Random Forest feature importance
 
 ---
 
 ## Results
 - Random Forest achieved higher accuracy than Logistic Regression  
-- Important features affecting loan approval:
+- Key features affecting loan approval:
   - Credit History
   - Applicant Income
   - Loan Amount
@@ -68,7 +63,3 @@ The dataset is taken from Kaggle:
 
 ---
 
-## How to Run
-1. Clone the repository:
-```bash
-git clone https://github.com/Akshaya-unnikrishnan/Loan_Approval_Prediction.git
